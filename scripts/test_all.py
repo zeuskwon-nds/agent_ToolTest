@@ -5,6 +5,10 @@
 import sys
 import time
 from datetime import datetime
+from pathlib import Path
+
+# 프로젝트 루트를 Python 경로에 추가
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 
 def print_section(title):
@@ -36,7 +40,7 @@ def test_database():
     print_section("2. 데이터베이스 연결 확인")
     
     try:
-        from text_to_sql_tool import TextToSQLTool
+        from src.text_to_sql_tool import TextToSQLTool
         
         tool = TextToSQLTool()
         result = tool.execute_sql("SELECT COUNT(*) as count FROM agent.tb_user_info LIMIT 1")
@@ -59,7 +63,7 @@ def test_text_to_sql():
     print_section("3. Text-to-SQL 도구 테스트")
     
     try:
-        from text_to_sql_tool import TextToSQLTool
+        from src.text_to_sql_tool import TextToSQLTool
         
         tool = TextToSQLTool()
         
@@ -87,7 +91,7 @@ def test_strands_agent():
     print_section("4. Strands Agent 테스트")
     
     try:
-        from strands_health_agent import HealthChatAgent
+        from src.strands_health_agent import HealthChatAgent
         
         print("   Agent 초기화 중...")
         agent = HealthChatAgent()
@@ -145,7 +149,7 @@ def main():
     
     if success_count == total_count:
         print("\n  🎉 모든 테스트 통과! Streamlit UI를 실행하세요:")
-        print("     ./run_streamlit.sh")
+        print("     ./scripts/run_streamlit.sh")
         return 0
     else:
         print("\n  ⚠️  일부 테스트 실패. 설정을 확인하세요.")

@@ -6,7 +6,7 @@ echo "GitHub에 푸시 준비"
 echo "=================================="
 echo ""
 
-# Git 초기화 (이미 되어있으면 스킵)
+# Git 초기화
 if [ ! -d .git ]; then
     echo "1. Git 초기화..."
     git init
@@ -24,8 +24,8 @@ git commit -m "Initial commit: Health Data AI Agent
 
 - Strands Agents SDK 기반 Text-to-SQL Agent
 - 자연어로 데이터베이스 검색
-- Streamlit 웹 UI
-- CLI 인터페이스
+- Streamlit 웹 UI + CLI
+- 기능별 폴더 구조 (src, scripts, docs)
 - 완전한 문서화"
 
 echo ""
@@ -48,6 +48,4 @@ echo "=================================="
 echo ""
 echo "저장소 URL:"
 echo "https://github.com/zeuskwon-nds/agent_ToolTest"
-echo ""
-echo "동료에게 공유하세요!"
 echo ""

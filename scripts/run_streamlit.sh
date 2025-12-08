@@ -13,4 +13,4 @@ echo ""
 # 포트 설정 (기본: 8501)
 PORT=${1:-8501}
 
-streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+streamlit run src/app.py --server.port $PORT --server.address 0.0.0.0

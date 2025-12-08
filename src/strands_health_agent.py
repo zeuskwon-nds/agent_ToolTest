@@ -7,7 +7,11 @@ import warnings
 warnings.filterwarnings(action="ignore", message=r"datetime.datetime.utcnow")
 
 from strands import Agent, tool
-from text_to_sql_tool import TextToSQLTool
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from src.text_to_sql_tool import TextToSQLTool
 from config import MODEL_ID
 
 

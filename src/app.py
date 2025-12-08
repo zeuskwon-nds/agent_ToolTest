@@ -7,6 +7,10 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
+
 from strands_health_agent import HealthChatAgent
 from text_to_sql_tool import TextToSQLTool
 from datetime import datetime
