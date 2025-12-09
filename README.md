@@ -157,33 +157,10 @@ python scripts/check_aws_credentials.py
 - SQL 인젝션 방지
 - config.py는 Git에서 제외 (.gitignore)
 
-## 🤝 기여
-
-기여를 환영합니다! Pull Request를 보내주세요.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 라이선스
 
 This project is proprietary software owned by NDS Corp.
 Unauthorized use, distribution, or modification is strictly prohibited.
 - 자세한 내용은 [LICENSE](LICENSE) 파일 참조
-
-## 🙏 감사
-
-- [Strands Agents](https://strandsagents.com) - AI Agent 프레임워크
-- [AWS Bedrock](https://aws.amazon.com/bedrock/) - LLM 서비스
-- [Streamlit](https://streamlit.io) - 웹 UI 프레임워크
-
----
-
-⭐ 이 프로젝트가 도움이 되었다면 Star를 눌러주세요!
-
-## 📞 문의
-
-프로젝트에 대한 질문이나 제안이 있으시면 GitHub Issues를 통해 연락주세요.
 
